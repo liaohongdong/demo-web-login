@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -15,6 +16,11 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@fe-micro/eslint-config-micro": "1.0.7-alpha.25",
+    "@fe-micro/micro-core": "1.0.3-alpha.25",
+    "@fe-micro/micro-http": "0.0.5-alpha.25",
+    "@fe-micro/micro-router": "0.0.5-alpha.25",
+    "@fe-micro/micro-util": "0.0.3-alpha.25",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-pwa": "~4.5.0",
@@ -32,6 +38,8 @@
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.2",
+    "svg-sprite-loader": "^6.0.6",
+    "svgo": "^2.3.0",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {

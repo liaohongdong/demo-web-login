@@ -1,17 +1,18 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true
-  },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/standard'
-  ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-  rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
-  }
-}
+    root: true,
+    env: {
+        es6: true,
+        node: true,
+    },
+    extends: [
+        'plugin:vue/essential',
+        'eslint:recommended',
+        '@fe-micro/eslint-config-micro'
+    ],
+    parserOptions: {
+        parser: 'babel-eslint',
+    },
+    rules: {
+        indent: 'off',
+    },
+};
