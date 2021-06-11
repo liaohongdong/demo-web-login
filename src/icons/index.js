@@ -2,7 +2,7 @@
  * @Author: hongdong.liao
  * @Date: 2021-05-12 11:15:59
  * @LastEditors: hongdong.liao
- * @LastEditTime: 2021-05-12 14:54:41
+ * @LastEditTime: 2021-06-01 16:46:12
  * @FilePath: /microDemo/demo-web/demo-web-login/src/icons/index.js
  */
 import Vue from 'vue';
@@ -13,4 +13,6 @@ Vue.component('svg-icon', SvgIcon);
 
 const req = require.context('./svg', false, /\.svg$/);
 const requireAll = requireContext => requireContext.keys().map(requireContext);
-requireAll(req);
+const aaa = requireAll(req);
+
+console.log(aaa, 18);
